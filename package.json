@@ -1,0 +1,19 @@
+{
+  "name": "nicolasvanhorle_p3_10032022",
+  "version": "1.0.0",
+  "description": "P3 du parcours développeur WEB",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FebScap/NicolasVanhorle_P3_10032022.git"
+  },
+  "author": "Nicolas Vanhorle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FebScap/NicolasVanhorle_P3_10032022/issues"
+  },
+  "homepage": "https://github.com/FebScap/NicolasVanhorle_P3_10032022#readme"
+}
