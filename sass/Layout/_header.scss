@@ -1,0 +1,7 @@
+.logo {
+    @include display-center;
+    width: 100%;
+    &__img {
+        width: 45%;
+    }
+}
