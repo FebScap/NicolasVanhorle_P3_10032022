@@ -11,8 +11,17 @@
   }
 }
 
-@mixin display-center {
+@mixin display-center($dirrection) {
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  @if ($dirrection == column) {
+    align-content: center;
+  } @else {
+    justify-content: center;
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 0 5px 15px grey;
 }

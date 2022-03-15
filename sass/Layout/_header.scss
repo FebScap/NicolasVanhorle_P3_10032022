@@ -1,6 +1,8 @@
 .logo {
-    @include display-center;
+    @include display-center(row);
     width: 100%;
+    margin: 0;
+    padding: 15px 0;
     &__img {
         width: 45%;
     }
