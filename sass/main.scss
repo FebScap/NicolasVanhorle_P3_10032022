@@ -1,8 +1,10 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/normalize";
+@import "./base/font";
 @import "./base/typography";
 @import "./layout/header";
 @import "./layout/section";
 @import "./pages/home";
 @import "./pages/menus";
+@import "./components/steps";
