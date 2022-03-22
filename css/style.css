@@ -393,6 +393,7 @@ ul {
 }
 .logo__img {
   width: 45%;
+  max-width: 200px;
 }
 
 section {
@@ -405,6 +406,27 @@ section {
 
 .footer {
   background-color: #353535;
+  padding: 15px;
+}
+.footer a {
+  color: white;
+  font-size: 0.8em;
+}
+.footer__title {
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: white;
+}
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer i {
+  width: 8px;
+  height: 8px;
+  padding-right: 20px;
 }
 
 * {
@@ -445,10 +467,11 @@ section {
 }
 .reserve__title {
   text-align: center;
-  width: 80%;
+  width: 60%;
 }
 .reserve__text {
   text-align: center;
+  width: 80%;
 }
 .reserve__button {
   margin-top: 20px;
@@ -469,9 +492,8 @@ section {
   display: flex;
   align-items: center;
   height: 70px;
-  width: 80%;
-  margin: 10px 0;
-  margin-left: 15%;
+  max-width: 325px;
+  margin: 10px 5% 0 15%;
   box-shadow: 0 5px 15px grey;
   border-radius: 20px;
 }
