@@ -1,10 +1,26 @@
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
 .logo {
-    @include display-center(row);
-    width: 100%;
-    margin: 0;
-    padding: 15px 0;
-    &__img {
-        width: 45%;
-        max-width: 200px;
-    }
+  @include display-center(row);
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  &__img {
+    width: 45%;
+    max-width: 200px;
+  }
+}
+
+.nav {
+  &__backbutton {
+    margin-left: 20px;
+    margin-right: -30px;
+    border: none;
+    background-color: white;
+    font-size: 1.6em;
+  }
 }

@@ -25,9 +25,11 @@
       </h1>
 
       <!--Buton retour-->
-      <nav>
+      <nav class="nav">
         <button class="nav__backbutton">
+          <a class="nav__link" href="../index.html">
           <i class="fa-solid fa-arrow-left"></i>
+          </a>
         </button>
       </nav>
     </header>
@@ -35,9 +37,15 @@
     <main>
       <!--Menu-->
       <section class="menu">
-        <h2 class="menu__title">À la française</h2>
+        <div class="menu__img">
+          <img
+            src="../img/restaurants/aLaFrancaise.jpg"
+            alt="Image du restaurant"
+          />
+        </div>
+        <h2 class="menu__title section__title">À la française</h2>
         <!--Entrées-->
-        <h3 class="menu_subtitle">Entrées</h3>
+        <h3 class="menu__subtitle">Entrées</h3>
         <ul class="menu__box">
           <li class="card">
             <h4 class="card__title">Tartare de poulpe acidulé</h4>
@@ -59,7 +67,7 @@
         </ul>
 
         <!--Plats-->
-        <h3 class="menu_subtitle">Plats</h3>
+        <h3 class="menu__subtitle">Plats</h3>
         <ul class="menu__box">
           <li class="card">
             <h4 class="card__title">Coquilles Saint-Jacques</h4>
@@ -81,7 +89,7 @@
         </ul>
 
         <!--Desserts-->
-        <h3 class="menu_subtitle">Desserts</h3>
+        <h3 class="menu__subtitle">Desserts</h3>
         <ul class="menu__box">
           <li class="card">
             <h4 class="card__title">Pétales de violettes glacés</h4>

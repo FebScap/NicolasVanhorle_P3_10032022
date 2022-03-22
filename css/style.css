@@ -383,6 +383,12 @@ ul {
   list-style-type: none;
 }
 
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -394,6 +400,14 @@ ul {
 .logo__img {
   width: 45%;
   max-width: 200px;
+}
+
+.nav__backbutton {
+  margin-left: 20px;
+  margin-right: -30px;
+  border: none;
+  background-color: white;
+  font-size: 1.6em;
 }
 
 section {
@@ -488,6 +502,31 @@ section {
 }
 
 /*Fonctionnement*/
+.menu {
+  margin: 0;
+}
+.menu__img {
+  margin-bottom: -30px;
+}
+.menu__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.menu__title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 100;
+  background-color: white;
+  padding-top: 30px;
+  border-radius: 30px;
+}
+.menu__subtitle {
+  padding-left: 20px;
+}
+.menu__box {
+  padding-left: 20px;
+}
+
 .steps__li {
   display: flex;
   align-items: center;
