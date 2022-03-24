@@ -46,6 +46,9 @@
     align-items: center;
     margin: 0 15px;
   }
+  &__name {
+    font-weight: 600;
+  }
   &__text {
     display: flex;
     flex-direction: column;
