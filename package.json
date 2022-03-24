@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass --watch ./sass/main.scss:./css/style.css",
-    "postbuild": ""
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed.css"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
   },
   "author": "Nicolas Vanhorle",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/FebScap/NicolasVanhorle_P3_10032022/issues"
   },
