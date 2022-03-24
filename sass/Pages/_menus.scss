@@ -38,27 +38,6 @@
   }
 }
 
-.card {
-  padding: 10px;
-  padding-right: 15px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  @include box-shadow;
-  display: flex;
-  flex-direction: column;
-  &__box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  & p {
-    margin: 0;
-  }
-  &__price {
-    font-weight: 600;
-  }
-}
-
 .command {
   @include display-center(row);
   &__button {

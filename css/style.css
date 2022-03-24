@@ -549,27 +549,6 @@ section {
   border-bottom: 5px solid #99E2D0;
 }
 
-.card {
-  padding: 10px;
-  padding-right: 15px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px grey;
-  display: flex;
-  flex-direction: column;
-}
-.card__box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.card p {
-  margin: 0;
-}
-.card__price {
-  font-weight: 600;
-}
-
 .command {
   display: flex;
   align-items: center;
@@ -667,6 +646,27 @@ section {
 }
 .restaurants__heart {
   font-size: 1.3em;
+}
+
+.card {
+  padding: 10px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px grey;
+  display: flex;
+  flex-direction: column;
+}
+.card__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card p {
+  margin: 0;
+}
+.card__price {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
