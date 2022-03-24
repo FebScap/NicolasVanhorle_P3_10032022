@@ -4,7 +4,8 @@
   "description": "P3 du parcours développeur WEB",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "build": "sass --watch ./sass/main.scss:./css/style.css",
+    "postbuild": ""
   },
   "repository": {
     "type": "git",
