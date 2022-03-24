@@ -1,6 +1,9 @@
 /*Couleurs*/
 /*Breakpoints*/
 /*Breakpoints*/
+/**, *::before, *::after {
+  outline: 1px red solid
+}*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -517,23 +520,25 @@ section {
   justify-content: center;
 }
 .menu__section {
-  margin-left: 20px;
-  min-width: 350px;
+  margin: 0 20px;
+  width: 350px;
+  flex-grow: 1;
 }
 .menu__img {
-  margin-bottom: -30px;
-}
-.menu__img img {
+  position: relative;
+  z-index: -1;
   object-fit: cover;
   height: 100%;
   width: 100%;
+  max-height: 50vh;
 }
 .menu__title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
   background-color: white;
-  padding-top: 30px;
-  border-radius: 30px;
+  margin-top: -40px;
+  padding-top: 40px;
+  border-radius: 40px 40px;
 }
 .menu__subtitle {
   margin-top: 40px;
@@ -552,7 +557,6 @@ section {
   box-shadow: 0 5px 15px grey;
   display: flex;
   flex-direction: column;
-  width: 95%;
 }
 .card__box {
   display: flex;
