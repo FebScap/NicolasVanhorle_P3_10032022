@@ -4,7 +4,7 @@
   "description": "P3 du parcours développeur WEB",
   "main": "index.js",
   "scripts": {
-    "build": "sass --watch ./sass/main.scss:./css/style.css",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
     "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed.css"
   },
   "repository": {

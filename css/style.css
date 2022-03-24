@@ -370,6 +370,10 @@ h4 {
   margin: 5px 0;
 }
 
+h5 {
+  margin: 0;
+}
+
 i {
   font-size: 0.7em;
 }
@@ -505,12 +509,24 @@ section {
 }
 .reserve__button:hover {
   background: linear-gradient(#FF79DA, #ff46cc);
-  box-shadow: 0 5px 15px grey;
+  box-shadow: 0 5px 15px #c8c8c8;
 }
 
 /*Fonctionnement*/
 .menu {
   margin: 0;
+}
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: -40px;
+  padding-top: 40px;
+  border-radius: 40px 40px;
+}
+.menu__heart {
+  padding-right: 40px;
 }
 .menu__storage {
   display: flex;
@@ -535,10 +551,6 @@ section {
 .menu__title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 100;
-  background-color: white;
-  margin-top: -40px;
-  padding-top: 40px;
-  border-radius: 40px 40px;
 }
 .menu__subtitle {
   margin-top: 40px;
@@ -567,7 +579,7 @@ section {
   height: 70px;
   max-width: 325px;
   margin: 10px 5% 0 15%;
-  box-shadow: 0 5px 15px grey;
+  box-shadow: 0 5px 15px #c8c8c8;
   border-radius: 20px;
 }
 .steps__li-colored {
@@ -610,9 +622,9 @@ section {
 .restaurants__card {
   width: 330px;
   height: 200px;
-  box-shadow: 0 5px 15px grey;
+  box-shadow: 0 5px 15px #c8c8c8;
   border-radius: 15px;
-  margin: 15px;
+  margin: 20px;
 }
 .restaurants__link {
   width: 100%;
@@ -624,10 +636,24 @@ section {
 }
 .restaurants__img img {
   object-fit: cover;
+  margin-right: -80px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   height: 100%;
   width: 100%;
+}
+.restaurants__new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #278870;
+  position: relative;
+  top: 20px;
+  left: -20px;
+  height: 30px;
+  width: 80px;
+  border-radius: 3px;
 }
 .restaurants__infos {
   height: 30%;
@@ -653,7 +679,7 @@ section {
   padding-right: 15px;
   margin-bottom: 15px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px grey;
+  box-shadow: 0 5px 15px #c8c8c8;
   display: flex;
   flex-direction: column;
 }

@@ -9,7 +9,7 @@
     height: 200px;
     @include box-shadow;
     border-radius: 15px;
-    margin: 15px;
+    margin: 20px;
   }
   &__link {
     width: 100%;
@@ -20,11 +20,23 @@
     display: flex;
     & img {
       object-fit: cover;
+      margin-right: -80px;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       height: 100%;
       width: 100%;
     }
+  }
+  &__new {
+    @include display-center(row);
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, $amount: 40);
+    position: relative;
+    top: 20px;
+    left: -20px;
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
   }
   &__infos {
     height: 30%;
@@ -39,7 +51,7 @@
     flex-direction: column;
   }
   &__place {
-      font-size: .8em;
+    font-size: 0.8em;
   }
   &__heart {
     font-size: 1.3em;
