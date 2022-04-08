@@ -394,6 +394,14 @@ ul {
   list-style-type: none;
 }
 
+.hide {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   flex-direction: row-reverse;
@@ -680,9 +688,6 @@ section {
 .restaurants__place {
   font-size: 0.8em;
 }
-.restaurants__heart {
-  font-size: 1.3em;
-}
 
 .card {
   padding: 10px;
@@ -703,6 +708,27 @@ section {
 }
 .card__price {
   font-weight: 600;
+}
+
+.heart__icon {
+  font-size: 1.3em;
+}
+.heart__box {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.heart__box .fa-solid {
+  display: none;
+}
+.heart__box .fa-solid, .heart__box .fa-regular {
+  grid-area: 1/1/2/2;
+}
+.heart--active .heart__box .fa-regular, .heart .toggle:checked + .heart__box .fa-regular {
+  display: none;
+}
+.heart--active .heart__box .fa-solid, .heart .toggle:checked + .heart__box .fa-solid {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

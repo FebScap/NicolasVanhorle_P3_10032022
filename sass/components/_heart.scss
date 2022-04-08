@@ -1,0 +1,25 @@
+.heart {
+  &__icon {
+    font-size: 1.3em;
+  }
+  &__box {
+      display: grid;
+      place-content: center;
+      place-items: center;
+      .fa-solid {
+          display: none;
+      }
+  }
+  &__box .fa-solid, &__box .fa-regular {
+      grid-area: 1/1/2/2;
+  }
+  &--active .heart__box,
+  & .toggle:checked + &__box {
+    .fa-regular {
+        display: none;
+    }
+    .fa-solid {
+          display: block;
+      }
+  }
+}
