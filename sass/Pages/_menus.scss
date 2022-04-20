@@ -44,6 +44,23 @@
     font-size: 1em;
     border-bottom: 5px solid $color-tertiary;
   }
+
+  @for $var from 1 to 20 {
+    &__box .card:nth-child(#{$var}) {
+      animation: menu-loading 3s calc($var * 250ms) backwards;
+    }
+  }
+}
+
+@keyframes menu-loading {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .command {
