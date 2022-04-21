@@ -45,10 +45,7 @@
     padding: 15px;
     border-radius: 30px;
     border: 0;
-    background: linear-gradient(
-      $color-secondary,
-      darken($color-secondary, 15%)
-    );
+    background: linear-gradient(-5deg, $color-primary, $color-secondary);
     box-shadow: 0 5px 20px grey;
 
     &:hover {
@@ -60,6 +57,3 @@
     }
   }
 }
-
-/*Fonctionnement*/
-
