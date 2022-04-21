@@ -785,7 +785,7 @@ section {
   font-weight: 600;
 }
 .card__title {
-  width: 100%;
+  width: 80%;
 }
 .card__text {
   width: 80%;
@@ -799,7 +799,7 @@ section {
 .card:hover .card__checkbox, .card .toggle {
   display: flex;
   align-items: center;
-  padding: 0 22px;
+  padding: 0 20px;
   height: 100%;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;

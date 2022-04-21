@@ -23,7 +23,7 @@
     font-weight: 600;
   }
   &__title {
-    width: 100%;
+    width: 80%;
   }
   &__text {
     width: 80%;
@@ -39,7 +39,7 @@
   &:hover .card__checkbox, & .toggle {
     display: flex;
     align-items: center;
-    padding: 0 22px;
+    padding: 0 20px;
     height: 100%;
     background-color: $color-tertiary;
     border-radius: 0 15px 15px 0;
