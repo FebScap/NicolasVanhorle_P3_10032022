@@ -792,7 +792,6 @@ section {
 }
 .card__title, .card__text {
   display: block;
-  width: inherit;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
