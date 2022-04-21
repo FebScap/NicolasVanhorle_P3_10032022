@@ -44,7 +44,13 @@
         />
         <div class="menu__header">
           <h2 class="menu__title section__title">À la française</h2>
-          <i class="fa-regular fa-heart restaurants__heart menu__heart"></i>
+          <label class="heart cursor margin-right">
+            <input type="checkbox" class="hide toggle" />
+            <div class="heart__box">
+              <i class="fa-regular fa-heart heart__icon"></i>
+              <i class="fa-solid fa-heart heart__icon"></i>
+            </div>
+          </label>
         </div>
 
         <div class="menu__storage">
@@ -52,27 +58,43 @@
           <div class="menu__section">
             <h3 class="menu__subtitle">Entrées</h3>
             <ul class="menu__box">
-              <li class="card">
-                <h4 class="card__title">Tartare de poulpe acidulé</h4>
-                <div class="card__box">
-                  <p class="card__text">Aux zestes d'orange</p>
-                  <p class="card__price">25€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Tartare de poulpe acidulé</h4>
+                  <div class="card__box">
+                    <p class="card__text">Aux zestes d'orange</p>
+                    <p class="card__price">25€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-              <li class="card">
-                <h4 class="card__title">Velouté de légumes d'antan</h4>
-                <div class="card__box">
-                  <p class="card__text">Carotte, panais, topinambour</p>
-                  <p class="card__price">35€</p>
+
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Velouté de légumes d'antan</h4>
+                  <div class="card__box">
+                    <p class="card__text">Carotte, panais, topinambour</p>
+                    <p class="card__price">35€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox toggle">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-              <li class="card">
-                <h4 class="card__title">Soupe à l'oignon</h4>
-                <div class="card__box">
-                  <p class="card__text">Revisitée</p>
-                  <p class="card__price">20€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Soupe à l'oignon</h4>
+                  <div class="card__box">
+                    <p class="card__text">Revisitée</p>
+                    <p class="card__price">20€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
             </ul>
@@ -82,27 +104,42 @@
           <div class="menu__section">
             <h3 class="menu__subtitle">Plats</h3>
             <ul class="menu__box">
-              <li class="card">
-                <h4 class="card__title">Coquilles Saint-Jacques</h4>
-                <div class="card__box">
-                  <p class="card__text">Accompagnées d'une purée de panais</p>
-                  <p class="card__price">40€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Coquilles Saint-Jacques</h4>
+                  <div class="card__box">
+                    <p class="card__text">Accompagnées d'une purée de panais</p>
+                    <p class="card__price">40€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-              <li class="card">
-                <h4 class="card__title">Magret de canard</h4>
-                <div class="card__box">
-                  <p class="card__text">Et parmentier de pommes de terre</p>
-                  <p class="card__price">35€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Magret de canard</h4>
+                  <div class="card__box">
+                    <p class="card__text">Et parmentier de pommes de terre</p>
+                    <p class="card__price">35€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-              <li class="card">
-                <h4 class="card__title">Pigeonneau d’Ille-et-Vilaine</h4>
-                <div class="card__box">
-                  <p class="card__text">Sur son lit de gnocchis aux légumes</p>
-                  <p class="card__price">44€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Pigeonneau d’Ille-et-Vilaine</h4>
+                  <div class="card__box">
+                    <p class="card__text">Sur son lit de gnocchis aux légumes</p>
+                    <p class="card__price">44€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
             </ul>
@@ -112,27 +149,42 @@
           <div class="menu__section">
             <h3 class="menu__subtitle">Desserts</h3>
             <ul class="menu__box">
-              <li class="card">
-                <h4 class="card__title">Pétales de violettes glacés</h4>
-                <div class="card__box">
-                  <p class="card__text">Et purée de noisettes</p>
-                  <p class="card__price">18€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Pétales de violettes glacés</h4>
+                  <div class="card__box">
+                    <p class="card__text">Et purée de noisettes</p>
+                    <p class="card__price">18€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-              <li class="card">
-                <h4 class="card__title">Fondant au chocolat</h4>
-                <div class="card__box">
-                  <p class="card__text">Revisité</p>
-                  <p class="card__price">22€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Fondant au chocolat</h4>
+                  <div class="card__box">
+                    <p class="card__text">Revisité</p>
+                    <p class="card__price">22€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-              <li class="card">
-                <h4 class="card__title">Millefeuille croustillant</h4>
-                <div class="card__box">
-                  <p class="card__text">Myrtilles et pâte d’amande</p>
-                  <p class="card__price">23€</p>
+              <li class="card cursor">
+                <div class="card__storage">
+                  <h4 class="card__title">Millefeuille croustillant</h4>
+                  <div class="card__box">
+                    <p class="card__text">Myrtilles et pâte d’amande</p>
+                    <p class="card__price">23€</p>
+                  </div>
+                </div>
+                <div class="card__checkbox hide">
+                  <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
             </ul>

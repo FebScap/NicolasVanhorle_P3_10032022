@@ -760,13 +760,18 @@ section {
 }
 
 .card {
-  padding: 10px;
-  padding-right: 15px;
+  height: 67px;
   margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: 0 5px 15px #c8c8c8;
   display: flex;
+}
+.card__storage {
+  display: flex;
   flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  padding-right: 15px;
 }
 .card__box {
   display: flex;
@@ -778,6 +783,29 @@ section {
 }
 .card__price {
   font-weight: 600;
+}
+.card__title {
+  width: 100%;
+}
+.card__text {
+  width: 80%;
+}
+.card__title, .card__text {
+  display: block;
+  width: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card:hover .card__checkbox, .card .toggle {
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  color: white;
+  font-size: 2em;
 }
 
 .heart__icon {
