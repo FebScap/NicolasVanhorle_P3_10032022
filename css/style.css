@@ -487,6 +487,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   animation: loading-spinner 3s forwards;
 }
 .spinner__ball {
@@ -856,7 +862,7 @@ section {
 }
 .card__checkbox {
   padding: 0 20px;
-  height: 100%;
+  height: 67px;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   color: white;
@@ -870,14 +876,34 @@ section {
   transform: rotate(0);
 }
 .card:hover .card__checkbox {
-  transform: scaleX(1);
-  transition: transform 1s ease;
+  animation: checkbox 2s forwards alternate;
 }
 .card:hover .card__icon {
-  transform: rotate(360deg);
-  transition: transform 1s ease;
+  animation: icon 2s forwards;
+}
+.card:not(hover) .card__checkbox {
+  animation-direction: reverse;
+}
+.card:not(hover) .card__icon {
+  animation-direction: reverse;
 }
 
+@keyframes checkbox {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes icon {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .heart__icon {
   font-size: 1.3em;
 }
