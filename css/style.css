@@ -582,10 +582,12 @@ section {
   border: 0;
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
   box-shadow: 0 5px 20px grey;
+  transition: all 500ms ease;
 }
 .reserve__button:hover {
-  background: linear-gradient(#FF79DA, #ff46cc);
+  background: linear-gradient(-5deg, #a16be0, #fface8);
   box-shadow: 0 5px 15px #c8c8c8;
+  transition: all 500ms ease;
 }
 
 .menu {
@@ -611,7 +613,7 @@ section {
   justify-content: center;
 }
 .menu__section {
-  margin: 0 20px;
+  padding: 0 20px;
   width: 350px;
   flex-grow: 1;
 }
@@ -829,13 +831,14 @@ section {
   border-radius: 15px;
   box-shadow: 0 5px 15px #c8c8c8;
   display: flex;
+  overflow: hidden;
 }
 .card__storage {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  width: min-content;
   padding: 10px;
   padding-right: 15px;
+  width: 1%;
+  flex-grow: 1;
 }
 .card__box {
   display: flex;
@@ -861,49 +864,30 @@ section {
   text-overflow: ellipsis;
 }
 .card__checkbox {
-  padding: 0 20px;
   height: 67px;
   background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
   color: white;
   font-size: 2em;
   transform-origin: right;
   display: flex;
+  flex-shrink: 0;
+  justify-content: center;
   align-items: center;
-  transform: scaleX(0);
+  width: 0px;
+  transition: all 500ms;
 }
 .card__icon {
   transform: rotate(0);
 }
 .card:hover .card__checkbox {
-  animation: checkbox 2s forwards alternate;
+  width: 60px;
+  transition: all 500ms;
 }
 .card:hover .card__icon {
-  animation: icon 2s forwards;
-}
-.card:not(hover) .card__checkbox {
-  animation-direction: reverse;
-}
-.card:not(hover) .card__icon {
-  animation-direction: reverse;
+  transform: rotate(360deg);
+  transition: all 500ms;
 }
 
-@keyframes checkbox {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes icon {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .heart__icon {
   font-size: 1.3em;
 }

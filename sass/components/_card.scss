@@ -4,12 +4,13 @@
   border-radius: 15px;
   @include box-shadow;
   display: flex;
+  overflow: hidden;
   &__storage {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    width: min-content;
     padding: 10px;
     padding-right: 15px;
+    width: 1%;
+    flex-grow: 1;
   }
   &__box {
     display: flex;
@@ -36,16 +37,17 @@
     text-overflow: ellipsis;
   }
   &__checkbox {
-    padding: 0 20px;
     height: 67px;
     background-color: $color-tertiary;
-    border-radius: 0 15px 15px 0;
     color: white;
     font-size: 2em;
     transform-origin: right;
     display: flex;
+    flex-shrink: 0;
+    justify-content: center;
     align-items: center;
-    transform: scaleX(0);
+    width: 0px;
+    transition: all 500ms;
   }
   &__icon {
     transform: rotate(0);
@@ -53,36 +55,12 @@
 
   &:hover {
     & .card__checkbox {
-      animation: checkbox 2s forwards alternate;
+      width: 60px;
+      transition: all 500ms;
     }
     & .card__icon {
-      animation: icon 2s forwards;
+      transform: rotate(360deg);
+      transition: all 500ms;
     }
-  }
-  &:not(hover) {
-    & .card__checkbox {
-      animation-direction: reverse;
-    }
-    & .card__icon {
-      animation-direction: reverse;
-    }
-  }
-}
-
-@keyframes checkbox {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-@keyframes icon {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
