@@ -621,7 +621,7 @@ section {
   position: relative;
   z-index: -1;
   object-fit: cover;
-  height: 100%;
+  height: 255px;
   width: 100%;
   max-height: 50vh;
 }
@@ -638,61 +638,61 @@ section {
   border-bottom: 5px solid #99E2D0;
 }
 .menu__box .card:nth-child(1) {
-  animation: menu-loading 3s 250ms backwards;
+  animation: menu-loading 1s 250ms backwards;
 }
 .menu__box .card:nth-child(2) {
-  animation: menu-loading 3s 500ms backwards;
+  animation: menu-loading 1s 500ms backwards;
 }
 .menu__box .card:nth-child(3) {
-  animation: menu-loading 3s 750ms backwards;
+  animation: menu-loading 1s 750ms backwards;
 }
 .menu__box .card:nth-child(4) {
-  animation: menu-loading 3s 1000ms backwards;
+  animation: menu-loading 1s 1000ms backwards;
 }
 .menu__box .card:nth-child(5) {
-  animation: menu-loading 3s 1250ms backwards;
+  animation: menu-loading 1s 1250ms backwards;
 }
 .menu__box .card:nth-child(6) {
-  animation: menu-loading 3s 1500ms backwards;
+  animation: menu-loading 1s 1500ms backwards;
 }
 .menu__box .card:nth-child(7) {
-  animation: menu-loading 3s 1750ms backwards;
+  animation: menu-loading 1s 1750ms backwards;
 }
 .menu__box .card:nth-child(8) {
-  animation: menu-loading 3s 2000ms backwards;
+  animation: menu-loading 1s 2000ms backwards;
 }
 .menu__box .card:nth-child(9) {
-  animation: menu-loading 3s 2250ms backwards;
+  animation: menu-loading 1s 2250ms backwards;
 }
 .menu__box .card:nth-child(10) {
-  animation: menu-loading 3s 2500ms backwards;
+  animation: menu-loading 1s 2500ms backwards;
 }
 .menu__box .card:nth-child(11) {
-  animation: menu-loading 3s 2750ms backwards;
+  animation: menu-loading 1s 2750ms backwards;
 }
 .menu__box .card:nth-child(12) {
-  animation: menu-loading 3s 3000ms backwards;
+  animation: menu-loading 1s 3000ms backwards;
 }
 .menu__box .card:nth-child(13) {
-  animation: menu-loading 3s 3250ms backwards;
+  animation: menu-loading 1s 3250ms backwards;
 }
 .menu__box .card:nth-child(14) {
-  animation: menu-loading 3s 3500ms backwards;
+  animation: menu-loading 1s 3500ms backwards;
 }
 .menu__box .card:nth-child(15) {
-  animation: menu-loading 3s 3750ms backwards;
+  animation: menu-loading 1s 3750ms backwards;
 }
 .menu__box .card:nth-child(16) {
-  animation: menu-loading 3s 4000ms backwards;
+  animation: menu-loading 1s 4000ms backwards;
 }
 .menu__box .card:nth-child(17) {
-  animation: menu-loading 3s 4250ms backwards;
+  animation: menu-loading 1s 4250ms backwards;
 }
 .menu__box .card:nth-child(18) {
-  animation: menu-loading 3s 4500ms backwards;
+  animation: menu-loading 1s 4500ms backwards;
 }
 .menu__box .card:nth-child(19) {
-  animation: menu-loading 3s 4750ms backwards;
+  animation: menu-loading 1s 4750ms backwards;
 }
 
 @keyframes menu-loading {

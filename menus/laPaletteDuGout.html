@@ -8,11 +8,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/style.css" />
-    <title>À la française - ohmyfood</title>
+    <title>La palette du goût - ohmyfood</title>
   </head>
 
   <body>
-    <!--Entête-->
     <!--Entête-->
     <header>
       <!--Logo-->
@@ -26,11 +25,11 @@
 
       <!--Buton retour-->
       <nav class="nav">
-        <button class="nav__backbutton">
+        <div class="nav__backbutton">
           <a class="nav__link" href="../index.html">
             <i class="fa-solid fa-arrow-left"></i>
           </a>
-        </button>
+        </div>
       </nav>
     </header>
 
@@ -39,17 +38,17 @@
       <section class="menu">
         <img
           class="menu__img"
-          src="../img/restaurants/aLaFrancaise.jpg"
+          src="../img/restaurants/laPaletteDuGout.jpg"
           alt="Image du restaurant"
         />
         <div class="menu__header">
-          <h2 class="menu__title section__title">À la française</h2>
+          <h2 class="menu__title section__title">La palette du goût</h2>
           <label class="heart cursor margin-right">
             <input type="checkbox" class="hide toggle" />
-            <div class="heart__box">
+            <span class="heart__box">
               <i class="fa-regular fa-heart heart__icon"></i>
               <i class="fa-solid fa-heart heart__icon"></i>
-            </div>
+            </span>
           </label>
         </div>
 
@@ -58,42 +57,41 @@
           <div class="menu__section">
             <h3 class="menu__subtitle">Entrées</h3>
             <ul class="menu__box">
-              <li class="card cursor">
+              <li class="card">
                 <div class="card__storage">
-                  <h4 class="card__title">Tartare de poulpe acidulé</h4>
+                  <h4 class="card__title">Fricassée d'escargot</h4>
                   <div class="card__box">
-                    <p class="card__text">Aux zestes d'orange</p>
+                    <p class="card__text">Au piment d'Espelette </p>
                     <p class="card__price">25€</p>
                   </div>
                 </div>
-                <div class="card__checkbox hide">
+                <div class="card__checkbox cursor">
                   <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-
-              <li class="card cursor">
+              <li class="card">
                 <div class="card__storage">
-                  <h4 class="card__title">Velouté de légumes d'antan</h4>
+                  <h4 class="card__title">Foie gras de canard mi-cuit</h4>
                   <div class="card__box">
-                    <p class="card__text">Carotte, panais, topinambour</p>
+                    <p class="card__text">Et ses copeaux de truffe noire</p>
                     <p class="card__price">35€</p>
                   </div>
                 </div>
-                <div class="card__checkbox toggle">
+                <div class="card__checkbox cursor">
                   <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
 
-              <li class="card cursor">
+              <li class="card">
                 <div class="card__storage">
-                  <h4 class="card__title">Soupe à l'oignon</h4>
+                  <h4 class="card__title">Oeuf au plat</h4>
                   <div class="card__box">
-                    <p class="card__text">Revisitée</p>
+                    <p class="card__text">Assaisonné à la truffe sur lit de caviar</p>
                     <p class="card__price">20€</p>
                   </div>
                 </div>
-                <div class="card__checkbox hide">
+                <div class="card__checkbox cursor">
                   <i class="fa-solid fa-circle-check card__icon"></i>
                 </div>
               </li>
@@ -106,9 +104,9 @@
             <ul class="menu__box">
               <li class="card cursor">
                 <div class="card__storage">
-                  <h4 class="card__title">Coquilles Saint-Jacques</h4>
+                  <h4 class="card__title">Filet de boeuf aux herbes</h4>
                   <div class="card__box">
-                    <p class="card__text">Accompagnées d'une purée de panais</p>
+                    <p class="card__text">Accompagné de sa ribambelle de légumes</p>
                     <p class="card__price">40€</p>
                   </div>
                 </div>
@@ -119,9 +117,9 @@
 
               <li class="card cursor">
                 <div class="card__storage">
-                  <h4 class="card__title">Magret de canard</h4>
+                  <h4 class="card__title">Parmentier de queue de boeuf</h4>
                   <div class="card__box">
-                    <p class="card__text">Et parmentier de pommes de terre</p>
+                    <p class="card__text">À la truffe noire sur sa purée de panais</p>
                     <p class="card__price">35€</p>
                   </div>
                 </div>
@@ -132,9 +130,11 @@
 
               <li class="card cursor">
                 <div class="card__storage">
-                  <h4 class="card__title">Pigeonneau d’Ille-et-Vilaine</h4>
+                  <h4 class="card__title">Filet de turbot</h4>
                   <div class="card__box">
-                    <p class="card__text">Sur son lit de gnocchis aux légumes</p>
+                    <p class="card__text">
+                      Aux agrumes
+                    </p>
                     <p class="card__price">44€</p>
                   </div>
                 </div>
@@ -151,9 +151,9 @@
             <ul class="menu__box">
               <li class="card cursor">
                 <div class="card__storage">
-                  <h4 class="card__title">Pétales de violettes glacés</h4>
+                  <h4 class="card__title">Paris-Brest</h4>
                   <div class="card__box">
-                    <p class="card__text">Et purée de noisettes</p>
+                    <p class="card__text">Revisité</p>
                     <p class="card__price">18€</p>
                   </div>
                 </div>
@@ -164,9 +164,9 @@
 
               <li class="card cursor">
                 <div class="card__storage">
-                  <h4 class="card__title">Fondant au chocolat</h4>
+                  <h4 class="card__title">Macaron au chocolat d'exception</h4>
                   <div class="card__box">
-                    <p class="card__text">Revisité</p>
+                    <p class="card__text">Et glace à la vanille de Madagascar</p>
                     <p class="card__price">22€</p>
                   </div>
                 </div>
@@ -177,9 +177,9 @@
 
               <li class="card cursor">
                 <div class="card__storage">
-                  <h4 class="card__title">Millefeuille croustillant</h4>
+                  <h4 class="card__title">Mousse au chocolat </h4>
                   <div class="card__box">
-                    <p class="card__text">Myrtilles et pâte d’amande</p>
+                    <p class="card__text">Au piment d'Espelette et à la truffe noire</p>
                     <p class="card__price">23€</p>
                   </div>
                 </div>
