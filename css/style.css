@@ -805,6 +805,8 @@ section {
   height: 30px;
   width: 80px;
   border-radius: 3px;
+  font-size: 0.83em;
+  font-weight: bold;
 }
 .restaurants__infos {
   height: 30%;
