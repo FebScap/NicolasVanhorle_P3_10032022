@@ -1,9 +1,12 @@
 /*Couleurs*/
 /*Breakpoints*/
 /*Breakpoints*/
-/**, *::before, *::after {
-  outline: 1px red solid
-}*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*, *::before, *::after {
+  outline: 1px red solid;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -11,8 +14,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -490,6 +491,7 @@ section {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   left: 0;
   right: 0;
   text-align: center;
@@ -777,10 +779,6 @@ section {
   border-radius: 15px;
   margin: 20px;
 }
-.restaurants__link {
-  width: 100%;
-  height: 100%;
-}
 .restaurants__img {
   height: 70%;
   display: flex;
@@ -894,9 +892,16 @@ section {
   font-size: 1.3em;
 }
 .heart__box {
+  width: 21px;
   display: grid;
   place-content: center;
   place-items: center;
+}
+.heart__box--position {
+  position: relative;
+  bottom: 40px;
+  left: 270px;
+  margin-bottom: -200px;
 }
 .heart__box .fa-solid {
   transform: scale(0, 0);
@@ -913,7 +918,9 @@ section {
   transform: scale(1, 1);
   transform-origin: bottom;
 }
-.heart--active .heart__box .fa-regular, .heart--active .heart__box .fa-solid, .heart .toggle:checked + .heart__box .fa-regular, .heart .toggle:checked + .heart__box .fa-solid {
+.heart--active .heart__box .fa-regular,
+.heart--active .heart__box .fa-solid, .heart .toggle:checked + .heart__box .fa-regular,
+.heart .toggle:checked + .heart__box .fa-solid {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;

@@ -3,12 +3,19 @@
     font-size: 1.3em;
   }
   &__box {
+    &--position {
+      position: relative;
+      bottom: 40px;
+      left: 270px;
+      margin-bottom: -200px;
+    }
+    width: 21px;
     display: grid;
     place-content: center;
     place-items: center;
     .fa-solid {
       transform: scale(0, 0);
-        }
+    }
     & .fa-solid,
     & .fa-regular {
       grid-area: 1/1/2/2;
@@ -29,7 +36,8 @@
   }
   &--active .heart__box,
   & .toggle:checked + &__box {
-    .fa-regular, .fa-solid {
+    .fa-regular,
+    .fa-solid {
       background: linear-gradient($color-primary, $color-secondary);
       -webkit-background-clip: text;
       background-clip: text;
