@@ -772,6 +772,7 @@ section {
   flex-wrap: wrap;
 }
 .restaurants__card {
+  position: relative;
   width: 330px;
   height: 200px;
   box-shadow: 0 5px 15px #c8c8c8;
@@ -887,20 +888,21 @@ section {
   transition: all 500ms;
 }
 
+.heart--position {
+  padding: 10px;
+  bottom: 7px;
+  right: 10px;
+  position: absolute;
+}
 .heart__icon {
   font-size: 1.3em;
 }
 .heart__box {
   width: 21px;
+  height: 21px;
   display: grid;
   place-content: center;
   place-items: center;
-}
-.heart__box--position {
-  position: relative;
-  bottom: 40px;
-  left: 270px;
-  margin-bottom: -200px;
 }
 .heart__box .fa-solid {
   transform: scale(0, 0);

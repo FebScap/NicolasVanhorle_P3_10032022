@@ -5,6 +5,7 @@
     flex-wrap: wrap;
   }
   &__card {
+    position: relative;
     width: 330px;
     height: 200px;
     @include box-shadow;
